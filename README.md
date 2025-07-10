@@ -275,19 +275,18 @@ source venv/bin/activate
 pip install flask -y 
 python app.py 
 ```
-
 ---
 
-## 📸 Screenshots
-
-> Add images of your running app UI and chart here if needed.
-
----
-
-## 📜 Author
+## 👨‍💻 Author
 
 **Atul Kamble**
-🔗 [GitHub](https://github.com/atulkamble)
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/atuljkamble)
+- 🐙 [GitHub](https://github.com/atulkamble)
+- 🐦 [X](https://x.com/Atul_Kamble)
+- 📷 [Instagram](https://www.instagram.com/atuljkamble)
+- 🌐 [Website](https://www.atulkamble.in)
+
 
 ---
 
