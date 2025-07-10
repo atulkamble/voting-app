@@ -37,25 +37,77 @@ if __name__ == '__main__':
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Voting App</title>
+    <title>Voting App with Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        button { padding: 10px 20px; margin: 10px; font-size: 16px; }
+        body { font-family: Arial, sans-serif; text-align: center; background: #f4f4f4; margin: 0; padding: 20px; }
+        h1 { color: #333; }
+        button { padding: 10px 20px; margin: 10px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; }
+        .vote-btn { background-color: #4CAF50; color: white; }
+        .reset-btn { background-color: #f44336; color: white; }
+        canvas { margin-top: 20px; }
     </style>
 </head>
 <body>
-    <h1>Vote for your Favorite Language</h1>
+    <h1>Vote for Your Favorite Language</h1>
+
     <form method="POST" action="/vote">
-        <button type="submit" name="language" value="Python">Python</button>
-        <button type="submit" name="language" value="Java">Java</button>
-        <button type="submit" name="language" value="Go">Go</button>
+        <button type="submit" name="language" value="Python" class="vote-btn">Python</button>
+        <button type="submit" name="language" value="Java" class="vote-btn">Java</button>
+        <button type="submit" name="language" value="Go" class="vote-btn">Go</button>
     </form>
-    <h2>Current Results:</h2>
-    <ul>
-        {% for lang, count in votes.items() %}
-        <li><strong>{{ lang }}</strong>: {{ count }} votes</li>
-        {% endfor %}
-    </ul>
+
+    <form method="POST" action="/reset">
+        <button type="submit" class="reset-btn">Reset Votes</button>
+    </form>
+
+    <canvas id="voteChart" width="600" height="400"></canvas>
+
+    <script>
+        const ctx = document.getElementById('voteChart').getContext('2d');
+        let chart;
+
+        function fetchData() {
+            fetch('/data')
+                .then(response => response.json())
+                .then(data => {
+                    const labels = Object.keys(data);
+                    const votes = Object.values(data);
+
+                    if (chart) {
+                        chart.data.labels = labels;
+                        chart.data.datasets[0].data = votes;
+                        chart.update();
+                    } else {
+                        chart = new Chart(ctx, {
+                            type: 'bar',
+                            data: {
+                                labels: labels,
+                                datasets: [{
+                                    label: 'Votes',
+                                    data: votes,
+                                    backgroundColor: ['#4CAF50', '#2196F3', '#FF9800']
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    y: {
+                                        beginAtZero: true,
+                                        ticks: {
+                                            precision:0
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    }
+                });
+        }
+
+        setInterval(fetchData, 1000);
+        fetchData();
+    </script>
+
 </body>
 </html>
 ```
