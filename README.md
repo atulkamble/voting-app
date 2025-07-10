@@ -370,6 +370,30 @@ Flask
 
 ---
 
+## ✅ Features Now:
+
+* 🔐 **Admin login page**
+* ✅ Only logged-in admins can **Reset Votes**
+* 🔐 **Logout button**
+* 👨‍💻 Simple hardcoded credentials:
+  **Username:** `admin`
+  **Password:** `admin`
+  (can be moved to env vars easily)
+* 🎨 Same clean voting UI + live chart
+
+---
+
+## 📌 Run It:
+
+```bash
+python3 app.py
+```
+
+Access:
+
+* **Voting Page:** `http://localhost:5000`
+* **Admin Login:** `http://localhost:5000/login`
+
 ## 📦 4️⃣ Build & Push Docker Image
 
 ```bash
