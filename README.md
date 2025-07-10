@@ -18,6 +18,14 @@ A simple **Python Flask voting app** with:
 git clone https://github.com/atulkamble/voting-app.git
 cd voting-app
 ```
+## 📸 Screenshots
+
+### 🖥️ App Interface  
+![Voting App UI](screenshots/vote-app.png)
+
+### 🖥️ Console Output  
+![Console Output](screenshots/console.png)
+
 
 ---
 
