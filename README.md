@@ -62,6 +62,96 @@ if __name__ == '__main__':
 
 ---
 
+**run this voting app locally on your machine without Docker/Kubernetes**:
+
+---
+
+## 📦 1️⃣ Project Structure (locally)
+
+```
+voting-app/
+├── app.py
+├── requirements.txt
+└── templates/
+    └── index.html
+```
+
+---
+
+## 🐍 2️⃣ Install Python & Dependencies
+
+If you haven't already:
+
+```bash
+python3 --version
+pip3 --version
+```
+
+---
+
+### Install virtual environment (optional but recommended)
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+### Install Flask
+
+Create `requirements.txt`:
+
+```
+Flask
+```
+
+Then run:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+---
+
+## 🏃 3️⃣ Run the App
+
+From your project directory:
+
+```bash
+python3 app.py
+```
+
+You’ll see:
+
+```
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+```
+
+---
+
+## 🌐 4️⃣ Access in Browser
+
+Open: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+
+✔️ You should see your voting app UI.
+
+---
+
+## 📌 Optional: Run without Virtualenv
+
+If you prefer globally:
+
+```bash
+pip3 install Flask
+python3 app.py
+```
+
+---
+
+✅ Done — your voting app is now running locally!
+
+
 ## 🐳 3️⃣ Dockerfile
 
 ```Dockerfile
