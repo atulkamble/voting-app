@@ -23,10 +23,6 @@ cd voting-app
 ### 🖥️ App Interface  
 ![Voting App UI](screenshots/vote-app.png)
 
-### 🖥️ Console Output  
-![Console Output](screenshots/console.png)
-
-
 ---
 
 ### 🐍 Install Dependencies
@@ -239,6 +235,12 @@ sudo systemctl restart nginx
 
 Access at:
 `http://<server-ip>`
+
+# docker compose
+```
+docker-compose up -d
+docker-compose down
+```
 
 # ec2-amazon linux
 ```
