@@ -90,8 +90,8 @@ Flask
 ## 📦 4️⃣ Build & Push Docker Image
 
 ```bash
-docker build -t atulkamble/voting-app:latest .
-docker push atulkamble/voting-app:latest
+docker build -t atuljkamble/voting-app:latest .
+docker push atuljkamble/voting-app:latest
 ```
 
 ---
