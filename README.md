@@ -1,13 +1,13 @@
 # 🗳️ Voting App — Python Flask | Docker | Kubernetes | Linux Hosting
 
 A simple **Python Flask voting app** with:
-
+```
 ✅ Clean HTML UI
 ✅ Admin Login for Vote Reset
 ✅ Dockerized Deployment
 ✅ Kubernetes-ready manifests
 ✅ Linux hosting instructions (EC2/Ubuntu/CentOS)
-
+```
 ---
 
 ## 📦 Quickstart: Run Locally
