@@ -485,9 +485,11 @@ voting-app/
 ├── Dockerfile
 ├── requirements.txt
 ├── templates/
-│   └── index.html
+│   ├── index.html
+│   └── login.html
 ├── voting-app-deployment.yaml
 └── voting-app-service.yaml
+
 ```
 # ec2-amazon linux
 ```
