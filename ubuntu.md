@@ -10,12 +10,8 @@ cd voting-app/
 sudo pip3 install flask 
 sudo apt install python3.12-venv -y
 sudo apt install pipx -y 
-
 python3 -m venv venv
 source venv/bin/activate 
-
 pip install flask -y 
-
 python app.py 
-
 ```
