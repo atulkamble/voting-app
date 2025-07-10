@@ -4,7 +4,7 @@ app = Flask(__name__)
 app.secret_key = 'supersecretkey'  # Replace in production
 
 votes = {"Python": 0, "Java": 0, "Go": 0}
-admin_credentials = {'username': 'admin', 'password': 'admin123'}
+admin_credentials = {'username': 'admin', 'password': 'admin'}
 
 @app.route('/')
 def index():
