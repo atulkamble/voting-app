@@ -1,3 +1,20 @@
+- new
+- very new 
+
+# big text
+## medium
+### small
+
+1. 
+2.
+
+```
+touch hello.txt 
+```
+
+
+
+
 1. **A basic voting app** — simple Python Flask backend with HTML UI
 2. **Dockerfile** — to containerize it
 3. **Kubernetes manifests** — Deployment & Service
