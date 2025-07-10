@@ -322,7 +322,7 @@ minikube service voting-app-service
 
 ---
 
-## 📁 Suggested GitHub Repo Structure:
+## 📁 GitHub Repo Structure:
 
 ```
 voting-app/
