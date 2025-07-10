@@ -1,3 +1,8 @@
+```
+git clone https://github.com/atulkamble/voting-app.git
+cd voting-app
+python3 app.py
+```
 1. **A basic voting app** — simple Python Flask backend with HTML UI
 2. **Dockerfile** — to containerize it
 3. **Kubernetes manifests** — Deployment & Service
