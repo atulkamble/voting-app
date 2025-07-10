@@ -1,4 +1,4 @@
-Excellent idea, Atul — let’s deploy this Flask voting app on a **Linux server (Ubuntu/RHEL-based)**.
+let’s deploy this Flask voting app on a **Linux server (Ubuntu/RHEL-based)**.
 I’ll give you a clean step-by-step guide to:
 
 * Install dependencies
